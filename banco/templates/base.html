@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} {% endblock%}</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Banco DeltaFi</h1>
+            <h3>Bienvenido</h3>
+        </header>
+        <section class="main">
+            {% block container %}
+            {% endblock %}
+        </section>
+        <footer class="footer">
+            <span>Todos los derechos a DeltaFi</span>
+        </footer>
+    </div>
+</body>
+</html>

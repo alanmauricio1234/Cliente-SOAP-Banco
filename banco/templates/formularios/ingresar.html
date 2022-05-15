@@ -1,0 +1,10 @@
+{% extends 'base.html' %} 
+{% block title %} Ingresar {% endblock %}
+{% block container %}
+    <form action="{% url 'banco:ingresar_n_tarjeta' %}" method="post">
+        {% csrf_token %}
+        {{form}}
+        <span class="message-error">{{mensaje}}</span>
+        <input class="button" type="submit" value="Enviar">
+    </form>
+{% endblock %}

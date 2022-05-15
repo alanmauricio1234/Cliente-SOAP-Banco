@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: #24303C;
+    
+}
+
+.header {
+    text-align: center;
+    color:azure;
+    margin: 10px;
+    padding: 10px;
+}
+
+.header h1 {
+    margin-bottom: 5px;
+    font-style: oblique;
+}
+
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.main {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    color: white;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    border: 2px solid #1F53C5;
+    border-radius: 2px;
+}
+
+.controls {
+    width: 100%;
+    background-color: #24303C;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1F53C5;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}
+
+.button {
+    width: 100%;
+    background-color: #1F53C5;
+    padding: 10px;
+    margin: 16px 0;
+    font-family: 'Montserrat';
+    font-style: oblique;
+    font-size: 16px;
+    color: white;
+    border: none; 
+}
+
+.message-error {
+    color: red;
+    padding: 5px;
+    margin: 10px 0px 5px 0px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: bold;
+}
+
+.intentos {
+    padding: 5px;
+    margin: 10px 0px 5px 0px;
+    font-size: 16px;
+}
+
+
+
+
