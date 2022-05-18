@@ -40,3 +40,19 @@ class NipForm(forms.Form):
         if re.match(exp, data) is None:
             raise ValidationError('El nip debe de tener 4 números. Ej. ****')
         return data
+
+class PagoForm(forms.Form):
+    pago = forms.FloatField(
+            label='Ingresa la cantidad a retirar',
+            min_value=0.0, 
+            required=True)
+    pago.widget.attrs.update({
+        'class': 'controls',
+        'placeholder': '$##.##'
+    })
+
+    def clean_pago(self):
+        data = self.cleaned_data['pago']
+        if data <= 0:
+            raise ValidationError('El retiro debe ser una cantidad positiva')
+        return data

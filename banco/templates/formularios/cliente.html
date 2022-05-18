@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
 {% block title %} Perfil {% endblock %}
 {% block container %}
-    
+    <section class="section-datas">
+        <span class="item-saldo item">Tu saldo es: ${{saldo}}</span>
+        <span class="item-limite item">Puedes retirar hasta: ${{limite}}</span>
+    </section>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <span class="message-error">{{mensaje}}</span>
+        <input class="button" type="submit" value="Enviar">
+    </form>
+    <section class="links">
+        <a class="link" href="{% url 'banco:ingresar_n_tarjeta' %}">Inicio</a>
+    </section>
 {% endblock %}

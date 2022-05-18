@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-color: #81ABD6;
+}
+
 .container {
     width: 400px;
     margin: auto;
@@ -50,6 +54,7 @@
     margin: 10px 10px 0px 10px;
     border: 2px solid #1F53C5;
     border-radius: 2px;
+    text-align: center;
 }
 
 .controls {
@@ -62,6 +67,7 @@
     font-family: 'calibri';
     font-size: 18px;
     color: white;
+    text-align: center;
 }
 
 .button {
@@ -73,13 +79,14 @@
     font-style: oblique;
     font-size: 16px;
     color: white;
-    border: none; 
+    border: none;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .message-error {
     color: red;
     padding: 5px;
-    margin: 10px 0px 5px 0px;
+    margin: 10px 0px 10px 0px;
     font-size: 18px;
     font-family: 'Montserrat';
     font-style: italic;
@@ -92,6 +99,47 @@
     font-size: 16px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 3px;
+    font-size: 16px;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #1F53C5;
+    border-radius: 1em;
+}
 
 
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.link {
+    grid-column: 2;
+}
+
+.section-datas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.item-saldo {
+    grid-row: 1;
+}
+
+.item-limite {
+    grid-row: 2;
+}
+
+.item {
+    font-size: 18px;
+    padding: 5px 5px;
+    margin: 2px 5px 5px 5px;
+    text-align: center;
+}
 

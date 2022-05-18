@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
-{% block title %} Perfil {% endblock %}
+{% block title %} NIP {% endblock %}
 
 {% block container %}
     {% if intentos > 0 %}
         <span class="intentos">Intentos: {{intentos}}</span>
     {% endif %}
-    <form action="{% url 'banco:ingresar_nip' %}" method="post">
+    <form action="" method="post">
         {% csrf_token %}
         {{form}}
         <span class="message-error">{{mensaje}}</span>
         <input class="button" type="submit" value="Enviar">
     </form>
+    <section class="links">
+        <a class="link" href="{% url 'banco:ingresar_n_tarjeta' %}">Inicio</a>
+    </section>
 {% endblock %}
