@@ -8,7 +8,7 @@ class ClienteServicio():
             mensaje = 'El número de tarjeta no esta registado :('
         elif not (self.client.service.verifica_tarjeta(n_tarjeta)):
             mensaje = 'La tarjeta no esta verificada :('
-        elif not (self.client.service.consulta_fecha(n_tarjeta)):
+        elif not (self.client.service.verifica_fecha(n_tarjeta)):
             mensaje = 'La fecha de vencimiento expiro :('
 
         return mensaje
@@ -18,7 +18,7 @@ class ClienteServicio():
             return False
         if not self.client.service.verifica_tarjeta(n_tarjeta):
             return False
-        if not self.client.service.consulta_fecha(n_tarjeta):
+        if not self.client.service.verifica_fecha(n_tarjeta):
             return False
         if self.client.service.verifica_tarjeta_bloqueada(n_tarjeta):
             return False
