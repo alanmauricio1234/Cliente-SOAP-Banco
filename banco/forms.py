@@ -1,4 +1,3 @@
-from attr import attr
 from django import forms
 from datetime import date
 import re
