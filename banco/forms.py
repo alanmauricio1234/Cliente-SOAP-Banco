@@ -53,5 +53,5 @@ class PagoForm(forms.Form):
     def clean_pago(self):
         data = self.cleaned_data['pago']
         if data <= 0:
-            raise ValidationError('El retiro debe ser una cantidad positiva')
+            raise ValidationError('El retiro debe ser mayor a cero')
         return data
